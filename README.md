@@ -20,6 +20,8 @@
 
 ## Describir cómo es el flujo de datos entre dos componentes en una aplicación VueJS (Un componente que llama a otro).
 
+* _Entendiendo el escenario de un componente que llama a otro, caso padre-hijo, hablamos de un flujo de comunicación unidireccional, ergo usando "habitualmente" props, ya que forman un enlace unidireccional entre la propiedad hija y su padre: cuando la propiedad padre se actualice, fluirá hacia la hija, pero no al revés. Esto evita que los componentes hijos muten accidentalmente el estado de los padres, lo que puede hacer que los datos de la aplicación sean más difíciles de entender, además cada vez que se actualice el componente padre, todas las propiedades del componente hijo se actualizarán con el último valor._
+
 ## ¿Qué es en VueJS el Virtual DOM?
 
 * _El modelo de objetos de documento, o DOM, es un tipo de interfaz que trata todo el lenguaje de marcado (su HTML) como nodos conectados. El Virtual DOM en VueJs es una abstraccion del DOM tradicional y se encuentra entre el DOM real y la instancia de Vue, El Virtual DOM está hecho de componentes de Vue, que son objetos de JavaScript que amplían la instancia de Vue, este ultimo se usa debido a la gran diferencia en velocidad y eficiencia en comparación con el DOM real ya que es más pequeño que el DOM real, por lo que es muy eficiente._
